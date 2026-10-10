@@ -1,6 +1,6 @@
 # GrandVillage 🏡
 
-> *Care.com helps you hire a stranger. GrandVillage helps you find family.*
+> *Other platforms help you hire a stranger. GrandVillage helps you find family.*
 
 A two-sided marketplace where **vetted retired seniors (60+)** offer childcare, household help, and lessons — and **parents** browse profiles, book by the hour, and pay in-platform. Seniors earn income and purpose; parents get trusted, compassionate help.
 
@@ -172,7 +172,7 @@ The host side is used by adults 65+. Non-negotiable:
 
 ## ⚖️ Compliance Notes (US)
 
-- **No childcare license needed** — seniors babysit in the *parents'* home (nanny/sitter exemption, all 50 states); the platform is a marketplace, like Care.com. Never present as licensed childcare; keep services non-medical.
+- **No childcare license needed** — seniors babysit in the *parents'* home (nanny/sitter exemption, all 50 states); the platform is a marketplace, like other care platforms. Never present as licensed childcare; keep services non-medical.
 - **Benefits-safe** — at full retirement age (67) there is **no** Social Security earnings limit; under 67, the 2026 cap is $24,480/yr. The app shows seniors an earnings tracker.
 - **COPPA** — never publish children's photos or names publicly. Ages only, visible solely to the booked senior.
 - **Background checks** — FCRA consent checkbox built into senior onboarding before any check runs.
