@@ -172,7 +172,7 @@ The host side is used by adults 65+. Non-negotiable:
 
 ## ⚖️ Compliance Notes (US)
 
-- **No childcare license needed** — seniors babysit in the *parents'* home (nanny/sitter exemption, all 50 states); the platform is a marketplace, like other care platforms. Never present as licensed childcare; keep services non-medical.
+- **No childcare license needed** — seniors babysit in the *parents'* home (nanny/sitter exemptions exist in many states, but rules vary by state); the platform is a marketplace, like other care platforms. Never present as licensed childcare; keep services non-medical.
 - **Benefits-safe** — at full retirement age (67) there is **no** Social Security earnings limit; under 67, the 2026 cap is $24,480/yr. The app shows seniors an earnings tracker.
 - **COPPA** — never publish children's photos or names publicly. Ages only, visible solely to the booked senior.
 - **Background checks** — FCRA consent checkbox built into senior onboarding before any check runs.
