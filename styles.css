@@ -440,27 +440,22 @@ h1,h2,h3{color:var(--ink)}
    the cream band faintly shows through at the sides; the center and all
    content stay fully opaque. */
 .ambient-band .ambient-grid{background:linear-gradient(90deg,rgba(255,253,249,.5) 0%,#FFFDF9 13%,#FFFDF9 87%,rgba(255,253,249,.5) 100%)}
-/* Homepage network map as its own full page in the scroll: the section is
-   full-bleed and flush with its neighbours (no air gap before or after —
-   the map's presence comes from filling the screen, not from empty space),
-   and its stage pins for a full viewport while scroll drives the
-   city-to-city flow. The map keeps its relative pacing while its runway
-   and final hold are 10% shorter: 100svh stage + 11 beats x 27svh
-   (28.8svh on small screens) + the shared 61.2svh end-dwell before release
-   — setupVisionMap scrubs against range-.612vh. */
-.network-flow{content-visibility:visible;contain-intrinsic-size:auto;overflow:visible}
+/* Homepage network map: a single static, full-bleed visual. The section
+   moves with the document like any other section; every city, label and
+   connection is present at once with a quiet fixed glow. */
+.network-flow{content-visibility:visible;contain-intrinsic-size:auto;overflow:visible;height:auto}
 .coverage-vision--home.network-flow{margin:0 calc(50% - 50vw);padding:0;border-radius:0;box-shadow:none}
-.network-flow-stage{position:relative;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(20px,3.5vh,38px);padding:clamp(56px,8vh,84px) clamp(16px,3vw,48px)}
+.network-flow-stage{position:relative;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(20px,3.5vh,38px);padding:clamp(64px,8vw,104px) clamp(16px,3vw,48px)}
 .network-flow .coverage-vision-copy{max-width:780px;text-align:center}
 .network-flow .coverage-vision-copy>p{margin-inline:auto}
 .network-flow .coverage-legend{justify-content:center;margin-top:20px}
 .network-flow .coverage-map{width:min(1180px,100%);min-height:0}
 .network-flow .coverage-map svg{width:100%;height:auto;max-height:63svh}
-@media(prefers-reduced-motion:no-preference){
-  .network-flow{height:458.2svh}
-  .network-flow-stage{position:sticky;top:0;height:100svh;padding-block:clamp(18px,3.5vh,40px)}
-}
-@media(max-width:700px) and (prefers-reduced-motion:no-preference){.network-flow{height:478svh}}
+.network-flow .route-base{stroke:var(--coverage-pulse);stroke-width:2;opacity:.72;filter:drop-shadow(0 0 4px color-mix(in srgb,var(--coverage-pulse) 68%,transparent))}
+.network-flow .vision-route{stroke:color-mix(in srgb,var(--coverage-pulse) 72%,transparent);stroke-width:1.7;stroke-dasharray:none;opacity:.68;filter:drop-shadow(0 0 3px color-mix(in srgb,var(--coverage-pulse) 42%,transparent))}
+.network-flow .route-pulse,.network-flow .vision-pulse{display:none}
+.network-flow .city-light,.network-flow .coverage-chip:first-child .coverage-dot,.network-flow .kinetic-line{animation:none!important;transform:none;opacity:1}
+.network-flow .city-halo,.network-flow .world-light,.network-flow .world-halo,.network-flow .map-label{opacity:1}
 
 /* Complete system-theme pass. Cinematic sections retain their visual character,
    but their surfaces, overlays, typography, map marks, and controls now follow
